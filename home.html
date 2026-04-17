@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carousel with Prefixed JS + iframe Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div>
+
+
+
+  <div class="carousel">
+    <video autoplay muted loop>
+        <source src="project assets/graveyardbg.mp4" type="video/mp4" />
+    </video>
+    <div class="anim-body">
+    <div class="fog-anim">
+  </div>
+  </div>  
+  <div class="bat-body">
+  <img class="bat" src="project assets/bat4.gif" style="width:150px;">
+    </div>
+  <div class="track" id="slider_track">
+      <div class="slide">
+        <a href="#" onclick="slider_openModal(event, 'claudiacrypt.html')"><img src="project assets/claudiacrypt2.png" style="width:350px; position:relative; top:60px"/></a>
+      </div>
+      <div class="slide">
+        <a href="#" onclick="slider_openModal(event, 'louiscrypt.html')"><img src="project assets/louiscrypt2.png" style="width:475px; position:relative; top:45px"/></a>
+      </div>
+      <div class="slide">
+        <a href="#" onclick="slider_openModal(event, 'armandcrypt.html')"><img src="project assets/armandcrypt2.png" style="width: 300px; position:relative; top: 20px"/></a>
+      </div>
+     <div class="slide">
+        <a href="#" onclick="slider_openModal(event, 'droltacrypt.html')"><img src="project assets/droltacrypt2.png" style="width: 500px; position:relative; top:45px"/></a>
+      </div>
+      <div class="slide">
+        <a href="#" onclick="slider_openModal(event, 'laurentcrypt.html')"><img src="project assets/laurentcrypt2.png" style="width: 300px; position:relative; top:50px"/></a>
+      </div>
+      <div class="slide">
+        <a href="#" onclick="slider_openModal(event, 'olroxcrypt.html')"><img src="project assets/olroxcrypt2.png" style="width: 500px; position:relative; top:45px"/></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+   <img src="project assets/leftarrow.png" class="cleft" onclick="slider_prev()" style="width:75px;">
+   <img src="project assets/rightarrow.png" class="cright" onclick="slider_next()" style="width:75px;">
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="slider_modal">
+  <div class="modal-content">
+    <span class="close" onclick="slider_closeModal()">&times;</span>
+    <iframe id="slider_modalFrame" src=""></iframe>
+  </div>
+</div>
+
+<script src="slider.js"></script>
+</body>
+</html>
