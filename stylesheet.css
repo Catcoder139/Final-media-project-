@@ -1,0 +1,111 @@
+
+
+html{
+    background-color:#152430;
+    overflow: hidden;
+}
+
+
+.container{
+    width:100%;
+    height:100vh;
+    overflow-x: hidden;
+}
+
+.slides{
+    width:100%;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color:aliceblue;
+}
+
+
+.slide1{
+    background-image: url("project assets/1crypt.jpg");
+    background-repeat: no-repeat;
+    background-size:     cover;
+    position: relative;
+}
+
+.slide2{
+    background-image: url("project assets/2crypt.jpg");
+    background-repeat: no-repeat;
+    background-size:     cover;
+    position: relative;
+ 
+}
+
+.slide3{
+    background-image: url("project assets/1acrypt.jpg");
+    background-repeat: no-repeat;
+    background-size:     cover;
+    position: relative;
+}
+
+.anim-body{
+    width: 100%;
+    height:100vh;
+    position:relative;
+}
+
+.fog-anim{
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:2;
+    left:0;
+    top:0;
+    background: url("fog2.png") repeat-x;
+    background-size:200% auto;
+    background-position: 0 bottom;
+    animation: fogAnim 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fogAnim{
+    0%{background-position: -200% bottom}
+    100%{background-position: 0% bottom}
+}
+
+.img-container {
+  z-index: 1;
+  
+}
+
+.hoverDisplay {
+  display: none;
+  z-index: 1;
+}
+
+.img-container:hover .hoverDisplay {
+  display: block;
+}
+
+
+.glow {
+    border-radius: 100%;
+    width: 300px;
+    filter: blur(35px);
+    background: radial-gradient(circle, rgba(222, 158, 109, 0.44) 0%, rgba(235, 208, 160, 0.45) 100%);
+    height: 600px;
+    bottom: 0;
+    z-index: 0;
+    animation: flicker_animation .125s infinite;
+}
+
+
+@keyframes flicker_animation {
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.flamelink{
+    width:10vw; 
+    height:40vh;
+    z-index: 1;
+}
