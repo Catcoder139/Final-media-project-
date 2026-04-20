@@ -1,11 +1,19 @@
-body {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  background-color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: sans-serif;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:-150px;
+}
 .carousel, .controls {
   width: 1500px;
   position: relative;
@@ -20,6 +28,7 @@ body {
 }
 .carousel {
   overflow: hidden;
+  border:1px solid #fff;
 }
 .controls {
   width: 1490px;
@@ -97,7 +106,6 @@ button {
 
 .fog-anim{
     position:relative;
-    width:1500px;
     height:100%;
     z-index:0;
     left:0;
