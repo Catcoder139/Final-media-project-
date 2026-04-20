@@ -2,11 +2,12 @@
 const slider_track = document.getElementById('slider_track');
 const slider_totalSlides = slider_track.children.length;
 let slider_index = Math.floor(slider_totalSlides / 2);
-const slider_slideWidth = 1500;
+const slider_slideWidth = slider_track.children[0].offsetWidth;
 const doorSound = new Audio('project assets/door3.mp3');  
 doorSound.preload = 'auto';  
 doorSound.volume = 0.5;
 
+  console.log('loaded')
 
 // Update slider position
 function slider_update() {
@@ -23,6 +24,7 @@ function slider_next() {
 }
 
 function slider_prev() {
+
   if (slider_index > 0) {
     slider_index--;
     slider_update();

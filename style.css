@@ -27,8 +27,8 @@ body {
   margin-left: 5px;
 }
 
-.cleft { float: left; }
-.cright { float: right; }
+.cleft { float: left;  cursor: pointer; }
+.cright { float: right;  cursor: pointer; }
 
 .track {
   display: flex;
