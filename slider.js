@@ -16,7 +16,7 @@ function slider_update() {
 
   // Hide/show arrows based on position
   document.querySelector('.cleft').style.visibility = slider_index === 0 ? 'hidden' : 'visible';
-  document.querySelector('.cright').style.visibility = slider_index === slider_totalSlides - 1 ? 'hidden' : 'visible';
+  document.querySelector('.cright').style.visibility = slider_index === (slider_totalSlides - 3) ? 'hidden' : 'visible';
 }
 // Next and Prev functions
 function slider_next() {
