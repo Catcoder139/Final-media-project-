@@ -10,6 +10,7 @@ html{
     width:100%;
     height:100vh;
     overflow-x: hidden;
+
 }
 
 .slides{
@@ -28,13 +29,16 @@ html{
     background-repeat: no-repeat;
     background-size:     cover;
     position: relative;
+    overflow: hidden;
 }
+
 
 .slide2{
     background-image: url("project assets/2crypt.jpg");
     background-repeat: no-repeat;
-    background-size:     cover;
+    background-size:cover;
     position: relative;
+    overflow: hidden;
  
 }
 
@@ -43,6 +47,7 @@ html{
     background-repeat: no-repeat;
     background-size:     cover;
     position: relative;
+    overflow: hidden;
 }
 
 .anim-body{
