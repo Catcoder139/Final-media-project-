@@ -20,16 +20,15 @@ function slider_update() {
 }
 // Next and Prev functions
 function slider_next() {
-  if (slider_index < slider_totalSlides - 1) {
-    slider_index++;
+  if (slider_index < slider_totalSlides - 1) {
+    slider_index = Math.min(slider_index + 3, slider_totalSlides - 1);
     slider_update();
   }
 }
 
 function slider_prev() {
-
-  if (slider_index > 0) {
-    slider_index--;
+  if (slider_index > 0) {
+    slider_index = Math.max(slider_index - 3, 0);
     slider_update();
   }
 }
