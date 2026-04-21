@@ -65,6 +65,7 @@ button {
 .modal {
   display: none;
   position: fixed;
+  margin-top: 15%;
   width: 1250px;
   height: 605px;
   background: rgba(0,0,0,0.8);
