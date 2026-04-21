@@ -1,20 +1,23 @@
 // Slider variables
 const slider_track = document.getElementById('slider_track');
 const slider_totalSlides = slider_track.children.length;
-let slider_index = Math.floor(slider_totalSlides / 2);
+let slider_index = 0; //Math.floor(slider_totalSlides / 2);
 const slider_slideWidth = slider_track.children[0].offsetWidth;
 const doorSound = new Audio('project assets/door3.mp3');  
 doorSound.preload = 'auto';  
 doorSound.volume = 0.5;
+document.querySelector('.cleft').style.visibility = slider_index === 0 ? 'hidden' : 'visible';
 
-  console.log('loaded')
 
 // Update slider position
 function slider_update() {
   const offset = slider_index * slider_slideWidth;
   slider_track.style.transform = `translateX(-${offset}px)`;
-}
 
+  // Hide/show arrows based on position
+  document.querySelector('.cleft').style.visibility = slider_index === 0 ? 'hidden' : 'visible';
+  document.querySelector('.cright').style.visibility = slider_index === slider_totalSlides - 1 ? 'hidden' : 'visible';
+}
 // Next and Prev functions
 function slider_next() {
   if (slider_index < slider_totalSlides - 1) {
