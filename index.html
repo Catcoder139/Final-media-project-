@@ -2,11 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Carousel with Prefixed JS + iframe Modal</title>
+  <title>The Modern Vampire</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div style="display:none;">
+
+<div>
+
+
+
+  <div class="carousel">
+    <div id="splash" onclick="start()">
+    <img src="project assets/graves.png" style="position: absolute; bottom:0%; width:100%;filter:brightness(0%);filter:opacity(50%);" >
+    <img src="project assets/gate3.png" style="position: absolute; bottom:-3%; width:102.5%;filter: brightness(5%);filter:opacity(80%);" >
+    <img src="project assets/title.png" style="position: absolute; top:0%; width:80%;" >
+    <img src="project assets/name.png" style="position: absolute; top:58%; right:12%; width:10%;" >
+    <img src="project assets/enter.png" style="position: absolute; top:64%; width:20%;" >
+    <div style="display:none;">
 <iframe src="claudiacrypt.html"></iframe>
 <iframe src="louiscrypt.html"></iframe>
 <iframe src="armandcrypt.html"></iframe>
@@ -19,12 +31,24 @@
 <iframe src="droltacrypt2.html"></iframe>
 <iframe src="laurentcrypt2.html"></iframe>
 <iframe src="olroxcrypt2.html"></iframe>
+<img src="project assets/1acrypt.jpg">
+<img src="project assets/1crypt.jpg">
+<img src="project assets/2crypt.jpg">
+<img src="project assets/fog3.png">
+<img src="project assets/claudiacrypt2.png">
+<img src="project assets/louiscrypt2.png">
+<img src="project assets/armandcrypt2.png">
+<img src="project assets/droltacrypt2.png">
+<img src="project assets/laurentcrypt2.png">
+<img src="project assets/olroxcrypt2.png">
+<video autoplay muted loop>
+        <source src="project assets/graveyardbg.mp4" type="video/mp4" />
+    </video>
+    </div>
 </div>
 <div>
-
-
-
-  <div class="carousel">
+    </div>
+    <audio id="bgm" src="project assets/bgmusic.mp3" loop></audio>
     <video autoplay muted loop>
         <source src="project assets/graveyardbg.mp4" type="video/mp4" />
     </video>
@@ -58,8 +82,8 @@
   </div>
 
   <div class="controls">
-   <img src="project assets/leftarrow.png" class="cleft" onclick="slider_prev()" style="width:75px;">
-   <img src="project assets/rightarrow.png" class="cright" onclick="slider_next()" style="width:75px;">
+   <img src="project assets/leftarrow2.png" class="cleft" onclick="slider_prev()" style="width:75px;">
+   <img src="project assets/rightarrow2.png" class="cright" onclick="slider_next()" style="width:75px;">
   </div>
 
 </div>
@@ -73,6 +97,5 @@
 </div>
 
 <script src="slider.js"></script>
-<audio src="project assets/bgmusic.mp3" autoplay loop></audio>
 </body>
 </html>
