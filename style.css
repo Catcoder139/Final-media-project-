@@ -28,7 +28,6 @@ body {
 }
 .carousel {
   overflow: hidden;
-  border:1px solid #fff;
 }
 .controls {
   width: 1490px;
@@ -140,7 +139,31 @@ button {
   animation-iteration-count: infinite;
 }
 
+#splash{
+position:absolute;
+top:0;
+left:0;
+z-index: 999;
+width:100%;
+height:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 25px;
+color: black;
+background: #8c1818;
+background: radial-gradient(circle, rgba(140, 24, 24, 1) 0%, rgba(99, 12, 29, 1) 100%);
 
+}
+
+
+
+
+#splash.hide{
+  opacity:0;
+  visibility:hidden;
+  transition:all 1s;
+}
 
 @keyframes batAnim{
   from{
@@ -151,4 +174,5 @@ button {
     transform: translateX(-300px);
   }
 }
+
 
