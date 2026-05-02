@@ -8,7 +8,6 @@ doorSound.preload = 'auto';
 doorSound.volume = 0.5;
 document.querySelector('.cleft').style.visibility = slider_index === 0 ? 'hidden' : 'visible';
 
-
 // Update slider position
 function slider_update() {
   const offset = slider_index * slider_slideWidth;
@@ -52,12 +51,27 @@ function slider_closeModal() {
   document.getElementById('slider_modalFrame').src = '';
 }
 
+function start(){
+  let splash = document.getElementById("splash");
+  splash.addEventListener("transitionend", () =>{
+    document.getElementById("bgm").play();
+    splash.remove();
+  })
+  splash.classList.add("hide");
+
+}
 // Close modal when clicking background
 document.getElementById('slider_modal').addEventListener('click', function(e) {
   if (e.target === this) slider_closeModal();
 });
 
-
+document.querySelectorAll('[type="color"]').forEach(($input) => {
+  $input.addEventListener("change", (e) => {
+    document
+      .querySelector(".scroller")
+      .style.setProperty(`--${$input.getAttribute("id")}`, $input.value);
+  });
+});
 // Initialise
 slider_update();
 
