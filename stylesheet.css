@@ -1,7 +1,7 @@
 
 
 html{
-    background-color:#152430;
+    background-color:rgb(44, 44, 44);
     overflow: hidden;
 }
 
@@ -130,10 +130,7 @@ html{
     height:40vh;
     z-index: 1;
 }
-body {
-  font-size: 15px;
-  font-weight: 600;
-}
+
 .page {
   background-color: #f8f5de;
   background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
@@ -141,8 +138,20 @@ body {
   color: rgba(0,0,0,0.5);
   font-family: "AustralisProSwash-Italic";
   width:20vw;
+  height:50vh;
   padding: 20px 20px 30px 25px;
-
+  overflow-y: scroll;
+  
+}
+.page2 {
+  background-color: #f8f5de;
+  background-image: linear-gradient(to right, rgba(255,210,0,0.4), rgba(200, 160, 0, 0.1) 11%, rgba(0,0,0,0) 35%, rgba(200, 160, 0, 0.1) 65%);
+  box-shadow: inset 0 0 75px rgba(255,210,0,0.3), inset 0 0 20px rgba(255,210,0,0.4), inset 0 0 30px rgba(220,120,0,0.8);
+  color: rgba(0,0,0,0.5);
+  font-family: "AustralisProSwash-Italic";
+  width:20vw;
+  padding: 20px 20px 30px 25px;
+  
 }
 .caps {
   color: rgba(0,0,0,0.7);
@@ -158,3 +167,52 @@ h1{
     font-size: 25px;
     color:rgba(0,0,0,0.7);
 }
+
+body{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+a:link {
+  color: #851C09;
+}
+
+
+a:visited {
+  color: #851C09;
+}
+
+a:hover {
+  color: #851C09;
+}
+
+::-webkit-scrollbar { 
+  width: 23px; 
+}
+
+::-webkit-scrollbar-track { 
+  background-color:rgb(44, 44, 44);
+
+}
+
+::-webkit-scrollbar-thumb { 
+  background-image: url("project assets/scrollbar3.png");
+  background-size: contain;
+  background-position: center;
+  
+}
+.page::-webkit-scrollbar { 
+  width: 22px; 
+}
+
+.page::-webkit-scrollbar-track { 
+  background-color: rgba(255,210,0,0.4);
+}
+
+.page::-webkit-scrollbar-thumb { 
+  background-image: url("project assets/scrollbar3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
