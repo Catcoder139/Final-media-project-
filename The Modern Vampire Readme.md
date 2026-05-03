@@ -1,4 +1,4 @@
-![](Readme\assets/splash.png)
+![](Readme\assets/vscode.png)
 
 Welcome to the Readme for ‘The Modern Vampire: Shedding Light From the Dark’; this document will explain how to access and interact with the site. 
 
