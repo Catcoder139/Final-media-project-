@@ -11,15 +11,15 @@ The project can be accessed via local (a PC/laptop) and remote hosts (Github). D
 	Local hosting:
 
 1. Download the Visual Studio Code application at [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) [![][image2]](https://code.visualstudio.com/Download)  
-2. Install the Live Server extension within the application via ‘Extensions’ \> ‘Search’ (live server) \> ‘Install’.
+	![](ReadmeAssets/vscode.png)
 
-   ![][image3]
+2. Install the Live Server extension within the application via ‘Extensions’ \> ‘Search’ (live server) \> ‘Install’.
+	![](ReadmeAssets/liveserver.png)
 
 3. Open the project folder in the application via ‘File’ \> ‘Open folder’ \> ‘Select Folder’.  
-   ![][image4]  
-4. Select the ‘index.html’ file and click ‘Go Live’ in the bottom right corner. This should load the site in your browser. 
-
-   ![][image5]
+   ![](ReadmeAssets/openfolder.png) 
+4. Select the ‘index.html’ file and click ‘Go Live’ in the bottom right corner. This should load the site in your browser.
+   ![](ReadmeAssets/golive.png)
 
    
 
@@ -34,25 +34,31 @@ Due to the fixed aspect ratio of the site, you may have to use the magnify featu
 **Interacting with the site:**
 
 At the splash page, click the mouse to enter the main page.   
-![][image6]  
+![](ReadmeAssets/splash.png)  
+
 On the main page, navigate between the first and second set of crypts using the arrow controls.
+![](ReadmeAssets/move.png)
 
 Click a crypt to enter it. 
+![](ReadmeAssets/crypt.png)
 
 On the character pages, scroll up and down to look at the new and old versions of the character.
+![](ReadmeAssets/scrollpage.png)
 
 Hover over the objects to read about some of the character’s story.   
-![][image7]
+![](ReadmeAssets/hover1.png)
 
 Click the candles to light them, this will take you to the ‘enlightened’ version of the page.
+![](ReadmeAssets/candles.png)
 
 Hover over the objects again to read analyses about the character.  
-![][image8]
+![](ReadmeAssets/hover2.png)
 
 Scroll to the bottom and click the hyperlinked text to be taken to the full analysis at its original source. 
+![](ReadmeAssets/link.png)
 
 Exit the crypt by clicking on the X in the top right corner. 
-
+![](ReadmeAssets/close.png)
 Explore the rest of the characters using the same methods.
 
 Thank you for reading and please enjoy\!
