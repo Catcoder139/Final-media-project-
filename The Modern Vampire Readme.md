@@ -27,7 +27,7 @@ The project can be accessed via local (a PC/laptop) and remote hosts (Github). D
 
 	Remote hosting:
 
-1. The project page is hosted on Github and can be accessed via this link: [https://catcoder139.github.io/Final-media-project-/](https://catcoder139.github.io/Final-media-project-/) 
+The project page is hosted on Github and can be accessed via this link: [https://catcoder139.github.io/Final-media-project-/](https://catcoder139.github.io/Final-media-project-/) 
 
 Due to the fixed aspect ratio of the site, you may have to use the magnify feature of your browser to zoom in/out depending on the screen size of your device.
 
